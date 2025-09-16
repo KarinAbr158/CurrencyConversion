@@ -39,10 +39,6 @@ public class MainActivity extends AppCompatActivity {
         database = CurrencyDatabase.getInstance(this);
         dao = database.dao();
 
-        /*USDtoNIS = new CurrencyConversion(3.32, "USA", "Israel");
-        PNDtoNIS = new CurrencyConversion(4.52, "The UK", "Israel");
-        PNDtoUSD = new CurrencyConversion(1.36, "The UK", "USA");*/
-
         convert = findViewById(R.id.button);
         cur1 = findViewById(R.id.cur1);
         cur2 = findViewById(R.id.cur2);
