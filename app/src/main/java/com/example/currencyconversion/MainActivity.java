@@ -108,6 +108,8 @@ public class MainActivity extends AppCompatActivity {
                 else if(cur1.getText() == "Pound Sterling" && cur2.getText() == "USD"){
                     end.setText(""+intValue*2);
                 }
+                CurrencyConversion curen = new CurrencyConversion(intValue, cur1.getText().toString(), cur2.getText().toString());
+                dao.insert(curen);
             }
         });
 
