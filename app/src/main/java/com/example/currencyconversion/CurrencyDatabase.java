@@ -18,6 +18,7 @@ public abstract class CurrencyDatabase extends RoomDatabase {
                     context.getApplicationContext(),
                             CurrencyDatabase.class,
                     "currency_database")
+                    .allowMainThreadQueries()
                     .build();
         }
         return instance;
